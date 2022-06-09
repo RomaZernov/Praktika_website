@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("Mulish-Light.eot");
+  src: local("Mulish Light"), local("Mulish-Light"),
+    url("Mulish-Light.eot?#iefix") format("embedded-opentype"),
+    url("Mulish-Light.woff2") format("woff2"),
+    url("Mulish-Light.woff") format("woff"),
+    url("Mulish-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("Mulish-Bold.eot");
+  src: local("Mulish Bold"), local("Mulish-Bold"),
+    url("Mulish-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Mulish-Bold.woff2") format("woff2"),
+    url("Mulish-Bold.woff") format("woff"),
+    url("Mulish-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("Mulish-Regular.eot");
+  src: local("Mulish Regular"), local("Mulish-Regular"),
+    url("Mulish-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Mulish-Regular.woff2") format("woff2"),
+    url("Mulish-Regular.woff") format("woff"),
+    url("Mulish-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

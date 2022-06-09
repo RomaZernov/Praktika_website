@@ -1,0 +1,68 @@
+.section3 {
+  width: 1410px;
+  height: 786px;
+  left: 80px;
+  top: 55px;
+}
+.main3 {
+  display: flex;
+  justify-self: center;
+  width: 1410px;
+  height: 106px;
+  left: 80px;
+  top: 55px;
+}
+.Featured {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1410px;
+  height: 106px;
+}
+.Featured1 {
+  margin: 20px;
+  margin-right: 700px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+
+  color: #000000;
+}
+.view {
+  background-color: white;
+  border: 0px;
+  display: flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  color: #fb8f1d;
+}
+.view:hover {
+  border-radius: 8px;
+  content: "";
+  display: inline;
+}
+.main4 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1410px;
+  height: 506px;
+  left: 80px;
+  top: 55px;
+}
+.mask {
+  margin-top: 20px;
+  display: flex;
+
+  width: 261px;
+  height: 332px;
+  left: 240px;
+  top: 2039px;
+}

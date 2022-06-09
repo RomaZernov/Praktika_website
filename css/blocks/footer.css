@@ -1,0 +1,135 @@
+.footer {
+  width: 1410px;
+  height: 606px;
+  left: 80px;
+  top: 55px;
+}
+.main8 {
+  width: 1410px;
+  height: 420px;
+  left: 80px;
+  top: 55px;
+  background: #f9f9fb;
+}
+.block15 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1410px;
+  height: 350px;
+  left: 808px;
+  top: 167px;
+}
+.block16 {
+  display: flex;
+  justify-content: center;
+  width: 1410px;
+  height: 20px;
+  left: 808px;
+  top: 167px;
+}
+.block17 {
+  margin-top: 20px;
+  width: 350px;
+  height: 300px;
+  left: 808px;
+  top: 167px;
+}
+.block18 {
+  width: 300px;
+  height: 300px;
+  left: 808px;
+  top: 167px;
+}
+.block19 {
+  width: 300px;
+  height: 300px;
+  left: 808px;
+  top: 167px;
+}
+.block20 {
+  width: 300px;
+  height: 300px;
+  left: 808px;
+  top: 167px;
+}
+.plan {
+  margin-top: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #848484;
+}
+.plan1 {
+  margin-top: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 28px;
+  color: #848484;
+}
+.destian {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 60px;
+
+  color: #000000;
+}
+.footermenu {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+
+  color: #848484;
+}
+
+.Shop {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 60px;
+
+  color: #000000;
+}
+.Interests {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 60px;
+
+  color: #000000;
+}
+.rc57 {
+  width: 1219px;
+  height: 0.6px;
+  left: 191px;
+  top: 5503px;
+
+  background: #c4c4c4;
+}
+.socialmedia {
+  width: 248.01px;
+  height: 23px;
+}
+.block21 {
+  display: flex;
+  justify-content: center;
+  width: 1410px;
+  height: 20px;
+  left: 808px;
+  top: 167px;
+}
+.yt {
+  margin-top: 10px;
+  margin-right: 30px;
+}

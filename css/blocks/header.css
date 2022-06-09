@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1410px;
+  height: 116px;
+  left: 80px;
+  top: 35px;
+}
+.logo1 {
+  display: flex;
+  width: 41px;
+  height: 41px;
+  left: 21px;
+  top: 45px;
+}
+.menu {
+  justify-content: space-between;
+  margin-left: 50px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  color: #b8becd;
+  width: 803px;
+  height: 60px;
+
+  top: 35px;
+}
+.headermenu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.lr {
+  display: flex;
+  justify-content: space-evenly;
+  width: 353px;
+  height: 60px;
+}
+
+.home1:hover {
+  content: "";
+  border-bottom: 3px solid black;
+  background-color: aliceblue;
+}
+.login1 {
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+
+  align-items: center;
+}
+.login1:hover {
+  border-radius: 8px;
+  content: "";
+  display: inline;
+  background: #fb8f1d;
+  border-top: 8px solid color #fb8f1d;
+}
