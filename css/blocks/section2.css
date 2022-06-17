@@ -74,19 +74,20 @@
   height: 60px;
   left: 902px;
   top: 1476px;
+  color: white;
+  border: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 60px;
   border-radius: 8px;
-
-  color: black;
-}
-.Learn1:hover {
   border-radius: 8px;
   content: "";
   display: inline;
   background: #fb8f1d;
   border-top: 8px solid color #fb8f1d;
+}
+.Learn1:active {
+  margin-top: 5px;
 }

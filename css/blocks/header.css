@@ -51,13 +51,36 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 50px;
-
+  width: 150px;
+  color: #fb8f1d;
+  border-color: #fb8f1d;
   align-items: center;
+  border-radius: 8px;
+  content: "";
+  display: inline;
+  background: white;
+  border-top: 8px solid color #fb8f1d;
 }
-.login1:hover {
+.login1:active {
+  margin-top: 5px;
+}
+.login2 {
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  width: 150px;
+  color: white;
+  border: none;
+  align-items: center;
   border-radius: 8px;
   content: "";
   display: inline;
   background: #fb8f1d;
   border-top: 8px solid color #fb8f1d;
+}
+.login2:active {
+  margin-top: 5px;
 }

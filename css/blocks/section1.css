@@ -214,6 +214,7 @@
 .exploer {
   font-family: "Mulish";
   font-style: normal;
+  color: white;
   font-weight: 700;
   font-size: 17px;
   line-height: 60px;
@@ -222,13 +223,15 @@
   margin-left: 55px;
   width: 170px;
   height: 60px;
-}
-.exploer:hover {
   border-radius: 8px;
+  border: none;
   content: "";
   display: inline;
   background: #fb8f1d;
-  border-top: 8px solid color #fb8f1d;
+  border-top: 2px solid color #fb8f1d;
+}
+.exploer:active {
+  margin-top: 5px;
 }
 
 .krug3 {
