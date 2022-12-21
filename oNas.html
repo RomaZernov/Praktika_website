@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/blocks/header.css" />
+    <link rel="stylesheet" href="css/blocks/section1.css" />
+    <link rel="stylesheet" href="css/fonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="css/fonts/Mulish/stylesheet.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/blocks/section2.css" />
+    <link rel="stylesheet" href="css/blocks/section3.css" />
+    <link rel="stylesheet" href="css/blocks/section4.css" />
+    <link rel="stylesheet" href="css/blocks/section5.css" />
+    <link rel="stylesheet" href="css/blocks/section6.css" />
+    <link rel="stylesheet" href="css/blocks/footer.css" />
+    <link rel="stylesheet" href="header.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="yt" src="images/logoroddom.png"  width="50px" alt=""
+          /></a>
+          <audio src="/raz.mp3" id="sss" preload="auto"></audio>
+    <span class="badge bg-info text-dark" id="date-info"></span>
+    <script>
+      function scetchick() {
+        let d = new Date();
+        let ddd = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        document.getElementById("date-info").innerHTML = ddd;
+        document.getElementById("sss").play();
+      }
+      setInterval(scetchick, 10000);
+    </script>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="oNas.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="roddom.html">Роддом</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="obratsvaz.html">Обратная свяь</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <a href="login.html"><button type="button" class="btn btn-outline-primary me-2">Вход</button></a>
+          <a href="reg.html"><button type="button" class="btn btn-primary" >Регистрация</button></a> 
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="text2">О НАС</h1>
+        <h1 class="text3">
+          ☎ Круглосуточная "Горячая линия" 8 921-358-50-81  </h1>
+          <h1 class="text3">  📞Запись на прием к врачу Женской консультации 8 (813-78) 67-147  </h1>
+          <h1 class="text3"> 📝Электронная запись на прием к врачу Женской консультации https://zdrav.lenreg.ru/
+          +7 (81378) 2-71-66 Россия, Выборг ,Ленинградское шоссе, 24</h1>
+      
+        <h1 class="text3">+7 (81378) 2-71-66 Россия, Выборг ,Ленинградское шоссе, 24 </h1>
+       
+       
+      </div>
+      <div class="col-sm">
+        <img class="thos"  src="images/vbg.jpg" alt="" />
+      </div>
+      
+    </div>
+  </div>
+    <footer class="text-center text-white" >
+ 
+      <div class="container pt-4">
+    
+        <section class="mb-4 bg-white">
+       
+          <a href="index.html"
+          ><img class="yt" src="images/logoroddom.png" width="50px" alt=""
+        /></a>
+         
+          <a href="http://instagram.com">
+            <img class="yt" src="images/inst.jpg"  width="50px" alt=""
+          /></a>
+    
+         
+          <a href="https://www.gosuslugi.ru"
+               ><img class="yt" src="images/gossusl.jpg" width="50px"
+              alt=""
+             /></a>
+       
+        </section>
+        </div>
+     </footer>
+  </div>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
+</html>

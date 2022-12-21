@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/blocks/header.css" />
+    <link rel="stylesheet" href="css/blocks/section1.css" />
+    <link rel="stylesheet" href="css/fonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="css/fonts/Mulish/stylesheet.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/blocks/section2.css" />
+    <link rel="stylesheet" href="css/blocks/section3.css" />
+    <link rel="stylesheet" href="css/blocks/section4.css" />
+    <link rel="stylesheet" href="css/blocks/section5.css" />
+    <link rel="stylesheet" href="css/blocks/section6.css" />
+    <link rel="stylesheet" href="css/blocks/footer.css" />
+    
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="yt" src="images/logoroddom.png"  width="50px" alt=""
+          /></a>
+          <audio src="/raz.mp3" id="sss" preload="auto"></audio>
+    <span class="badge bg-info text-dark" id="date-info"></span>
+    <script>
+      function scetchick() {
+        let d = new Date();
+        let ddd = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        document.getElementById("date-info").innerHTML = ddd;
+        document.getElementById("sss").play();
+      }
+      setInterval(scetchick, 10000);
+    </script>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="oNas.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="roddom.html">Роддом</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="obratsvaz.html">Обратная свяь</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <a href="login.html"><button type="button" class="btn btn-outline-primary me-2">Вход</button></a>
+          <a href="reg.html"><button type="button" class="btn btn-primary" >Регистрация</button></a> 
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-5 my-5 d-flex align-items-center ">
+            <div>
+              <h1 class="text1" >Роддом
+                
+                </h1>
+              <p class="text3">Расположен на карте</p>
+              <p class="text3">
+                Ленинградское ш., 26, Выборг, Ленинградская обл., 188810</p>
+              <br>
+              <a  style="background-color: rgb(117, 235, 235); width: 100px;height: 40px; border-radius: 10px; text-align: center; " class="nav-link" href="https://yandex.ru/maps/org/gbuz_lo_vyborgskiy_rodilny_dom/1081562601/?ll=28.761334%2C60.710558&z=15"><p3 class="text3">Карта</p3></a>
+             
+            </div>
+          </div>
+      <div class="col-lg-7 my-5">
+        <iframe          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.9156867770196!2d28.760245651464817!3d60.710396582075695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697323522a26a45%3A0xdab2aa7c240a403!2z0KDQvtC00LTQvtC8!5e0!3m2!1sru!2sru!4v1670534593579!5m2!1sru!2sru"
+          class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="text-center text-white" >
+ 
+    <div class="container pt-4">
+  
+      <section class="mb-4 bg-white">
+     
+        <a href="index.html"
+        ><img class="yt" src="images/logoroddom.png" width="50px" alt=""
+      /></a>
+       
+        <a href="http://instagram.com">
+          <img class="yt" src="images/inst.jpg"  width="50px" alt=""
+        /></a>
+  
+       
+        <a href="https://www.gosuslugi.ru"
+             ><img class="yt" src="images/gossusl.jpg" width="50px"
+            alt=""
+           /></a>
+     
+      </section>
+      </div>
+   </footer>
+</div>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
+</html>

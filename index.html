@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/blocks/header.css" />
     <link rel="stylesheet" href="css/blocks/section1.css" />
     <link rel="stylesheet" href="css/fonts/inter/stylesheet.css" />
@@ -16,250 +15,246 @@
     <link rel="stylesheet" href="css/blocks/section4.css" />
     <link rel="stylesheet" href="css/blocks/section5.css" />
     <link rel="stylesheet" href="css/blocks/section6.css" />
-    <link rel="stylesheet" href="css/blocks/footer.css" />
 
-    <title>Макет</title>
-  </head>
-  <body>
-    <div class="header">
-      <div class="logo">
-        <img class="logo1" src="./images/logo.svg" alt="" />
-      </div>
-      <div class="menu">
-        <ul class="headermenu">
-          <li class="home1">Home</li>
-          <li class="home1">Destinations</li>
-          <li class="home1">About</li>
-          <li class="home1">Partner</li>
+    
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="yt" src="images/logoroddom.png"  width="50px" alt=""
+          /></a>
+          <audio src="raz.mp3" id="sss" preload="auto"></audio>
+    <span class="badge bg-info text-dark" id="date-info"></span>
+    <script>
+      function scetchick() {
+        let d = new Date();
+        let ddd = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        document.getElementById("date-info").innerHTML = ddd;
+        document.getElementById("sss").play();
+      }
+      setInterval(scetchick, 10000);
+    </script>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="oNas.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="roddom.html">Роддом</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="obratsvaz.html">Обратная свяь</a>
+          </li>
         </ul>
-      </div>
-      <div class="lr">
-        <button class="login1">Логин</button>
-
-        <button class="login2">Регистрация</button>
+        <form class="d-flex" role="search">
+          <a href="login.html"><button type="button" class="btn btn-outline-primary me-2">Вход</button></a>
+         <a href="reg.html"><button type="button" class="btn btn-primary" >Регистрация</button></a> 
+        </form>
       </div>
     </div>
-    <div class="section">
-      <div class="main">
-        <div class="block1">
-          <div class="teksta">
-            <h1 class="text">Explore and Travel</h1>
-
-            <ul class="holiday">
-              <li>Holiday finder</li>
-            </ul>
-            <div class="line">
-              <img class="line1" src="images/line.png" alt="" />
+  </nav>
+  <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div  class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <!-- начало ряда -->
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img style="height: 190px;"
+                    src="images/foto1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Родзал</h5>
+                    <p class="card-text">
+                 
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="images/foto2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Родзал</h5>
+                    <p class="card-text">
+                 
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="images/foto3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Родзал</h5>
+                    <p class="card-text">
+                 
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- конец ряда -->
           </div>
+        </div>
+        <div   class="carousel-item">
+          <div class="container">
+            <!-- начало ряда -->
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="images/foto4.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">      Акушерское отделение </h5>
+                    <p class="card-text">
+                  
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="images/foto5.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">      Акушерское отделение </h5>
+                    <p class="card-text">
+                      
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="images/foto6.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">      Акушерское отделение </h5>
+                    <p class="card-text">
+                   
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- конец ряда -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <!-- начало ряда -->
 
-          <div class="finder">
-            <div class="rectangle">
-              Location <img src="images/Vector.svg" alt="" />
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="images/foto7.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Дневной страционар</h5>
+                    <p class="card-text">
+                     
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="images/foto8.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Дневной страционар</h5>
+                    <p class="card-text">
+                      
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="images/foto9.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Дневной страционарe</h5>
+                    <p class="card-text">
+                      
+                    </p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="rectangle2">
-              Activity<img src="images/Vector.svg" alt="" />
-            </div>
+            <!-- конец ряда -->
           </div>
-          <div class="finder2">
-            <div class="rectangle3">
-              Grade<img src="images/Vector.svg" alt="" />
-            </div>
-            <div class="rectangle4">
-              Data<img src="images/Vector.svg" alt="" />
-            </div>
-          </div>
-          <div class="finder3">
-            <button class="exploer">Exploer</button>
-            <img class="krug3" src="images/krug3.png" alt="" />
-          </div>
-        </div>
-
-        <div class="block2">
-          <img class="fotka" src="images/fotka1.png" alt="" />
         </div>
       </div>
+      <button style=" width: 50px;"
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span  class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button style=" width: 50px;"
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span  class="visually-hidden" ">Next</span>
+      </button>
     </div>
-    <div class="section2">
-      <div class="main2">
-        <div class="block3">
-          <img class="thos" src="images/Thousand-02 1.png" alt="" />
-        </div>
-        <div class="block4">
-          <h1 class="text2">A new way to explore the world</h1>
-          <h1 class="text3">
-            For decades travellers have reached for Lonely Planet books when
-            looking to plan and execute their perfect trip, but now, they can
-            also let Lonely Planet Experiences lead the way
-          </h1>
-          <div class="learn">
-            <button class="Learn1">Learn more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section3">
-      <div class="main3">
-        <div class="Featured">
-          <h1 class="Featured1">Featured destinations</h1>
-          <h1 class="view">View all ></h1>
-        </div>
-      </div>
-      <div class="main4">
-        <img class="mask" src="images/Raja ampat.png" alt="" />
-        <img class="mask" src="images/Fanjingshan.png" alt="" />
-        <img class="mask" src="images/Vevey.png" alt="" />
-        <img class="mask" src="images/Skadar.png" alt="" />
-      </div>
-    </div>
-    <div class="section4">
-      <div class="main5">
-        <div class="block5">
-          <h1 class="Cuides">Guides by Thousand Sunny</h1>
-          <h1 class="Packed">
-            Packed with tips and advice from our on-the-ground experts, our city
-            guides app (iOS and Android) is the ultimate resource before and
-            during a trip.
-          </h1>
-          <button class="Download">Download</button>
-        </div>
-        <div class="block6">
-          <img src="images/Thousand-03.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="section5">
-      <div class="main6">
-        <div class="block7">
-          <h1 class="Testimonials">Testimonials</h1>
-          <img class="stars" src="images/stars.png" alt="" />
-          <h1 class="Quisque">
-            “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus
-            ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet
-            turpis nec”
-          </h1>
-          <h1 class="Edward">Edward Newgate</h1>
-          <h1 class="Founder">Founder Circle</h1>
-        </div>
-
-        <div class="block8">
-          <img class="photo" src="images/photo.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="section6">
-      <div class="main7">
-        <div class="block9">
-          <h1 class="Trending">Trending stories</h1>
-          <h1 class="view">View all ></h1>
-        </div>
-        <div class="block10">
-          <div class="block11">
-            <img class="image12" src="images/image 12.png" alt="" />
-            <h1 class="the">The many benefits of taking a healing holiday</h1>
-            <h1 class="Helaing">
-              ‘Helaing holidays’ are on the rise tohelp maximise your health and
-              happines...
-            </h1>
-            <button class="Read">Read more</button>
-          </div>
-          <div class="block12">
-            <img class="image12" src="images/image 13.png" alt="" />
-            <h1 class="the">The best Kyoto restaurant to try Japanese food</h1>
-            <h1 class="Helaing">
-              From tofu to teahouses, here’s our guide to Kyoto’s best
-              restaurants to visit...
-            </h1>
-            <button class="Read">Read more</button>
-          </div>
-          <div class="block13">
-            <img class="image12" src="images/image 14.png" alt="" />
-            <h1 class="the">
-              Skip Chichen Itza and head to this remote Yucatan
-            </h1>
-            <h1 class="Helaing">
-              It’s remote and challenging to get, but braving the jungle and
-              exploring these ruins without the...
-            </h1>
-            <button class="Read">Read more</button>
-          </div>
-          <div class="block14">
-            <img class="image12" src="images/image 15.png" alt="" />
-            <h1 class="the">
-              Surf’s up at these beginner spots around the world
-            </h1>
-            <h1 class="Helaing">
-              If learning to surf has in on your to- do list for a while, the
-              good news is: it’s never too late...
-            </h1>
-            <button class="Read">Read more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="main8">
-        <div class="block15">
-          <div class="block17">
-            <img class="logo1" src="./images/logo.svg" alt="" />
-            <p class="plan">
-              Plan and book your perfect trip with expert advice, travel tips
-              destination information from us
-            </p>
-            <p class="plan1">©2020 Thousand Sunny. All rights reserved</p>
-          </div>
-          <div class="block18">
-            <h1 class="destian">Destinations</h1>
-            <ul class="footermenu">
-              <li>Africa</li>
-              <li>Antarctica</li>
-              <li>Asia</li>
-              <li>Europe</li>
-              <li>America</li>
-            </ul>
-          </div>
-          <div class="block19">
-            <h1 class="Shop">Shop</h1>
-            <ul class="footermenu">
-              <li>Destination Guides</li>
-              <li>Pictorial & Gifts</li>
-              <li>Special Offers</li>
-              <li>Delivery Times</li>
-              <li>FAQs</li>
-            </ul>
-          </div>
-          <div class="block20">
-            <h1 class="Interests">Interests</h1>
-            <ul class="footermenu">
-              <li>Adventure Travel</li>
-              <li>Art And Culture</li>
-              <li>Wildlife And Nature</li>
-              <li>Family Holidays</li>
-              <li>Food And Drink</li>
-            </ul>
-          </div>
-        </div>
-        <div class="block16">
-          <img class="rc57" src="images/Rectangle 57.png" alt="" />
-        </div>
-        <div class="block21">
-          <a href="http://twitter.com"
-            ><img class="yt" src="images/Vector.png" alt=""
-          /></a>
-          <a href="http://facebook.com">
-            <img class="yt" src="images/Vector2.png" alt=""
-          /></a>
+    <footer class="text-center text-white" >
+ 
+      <div class="container pt-4">
+    
+        <section class="mb-4 bg-white">
+       
+          <a href="index.html"
+          ><img class="yt" src="images/logoroddom.png" width="50px" alt=""
+        /></a>
+         
           <a href="http://instagram.com">
-            <img class="yt" src="images/Group1.png" alt=""
+            <img class="yt" src="images/inst.jpg"  width="50px" alt=""
           /></a>
-          <a href="http://in.com"
-            ><img class="yt" src="images/Group3.png" alt=""
-          /></a>
-          <a href="http://youtube.com"
-            ><img class="yt" src="images/Vector5.png" alt=""
-          /></a>
+    
+         
+          <a href="https://www.gosuslugi.ru"
+               ><img class="yt" src="images/gossusl.jpg" width="50px"
+              alt=""
+             /></a>
+       
+        </section>
         </div>
-      </div>
-    </div>
-  </body>
+     </footer>
+  </div>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
 </html>
