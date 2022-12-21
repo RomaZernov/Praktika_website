@@ -26,7 +26,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img class="yt" src="images/logoroddom.png"  width="50px" alt=""
           /></a>
-          <audio src="/raz.mp3" id="sss" preload="auto"></audio>
+          <audio src="raz.mp3" id="sss" preload="auto"></audio>
     <span class="badge bg-info text-dark" id="date-info"></span>
     <script>
       function scetchick() {
@@ -54,8 +54,13 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <a href="login.html"><button type="button" class="btn btn-outline-primary me-2">Вход</button></a>
-          <a href="reg.html"><button type="button" class="btn btn-primary" >Регистрация</button></a> 
+          <a href="login.html"><button data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="Тут вход!"type="button" class="btn btn-outline-primary me-2">Вход</button></a>
+         <a href="reg.html"><button data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          title="Зарегисрируйся пожалуйста"
+          type="button"  class="btn btn-primary" >Регистрация</button></a> 
         </form>
       </div>
     </div>
@@ -95,7 +100,9 @@
   </div>
     <div class="row g-12">
       <div class="col-4" > <a href="mailto:reoladxd@gmail.com"> 
-     <button  type="submit"  class="btn btn-primary" ><a style="color: black;" href="mailto:reoladxd@gmail.com">Отпарвить
+     <button  data-bs-toggle="tooltip"
+     data-bs-placement="bottom"
+     title="Кидай " type="submit"  class="btn btn-primary" ><a style="color: black;" href="mailto:reoladxd@gmail.com">Отпарвить
 
      </button></a>
      </div> 
@@ -112,12 +119,16 @@
         /></a>
          
           <a href="http://instagram.com">
-            <img class="yt" src="images/inst.jpg"  width="50px" alt=""
+            <img class="yt" data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="* Запрещено в РФ" src="images/inst.jpg"  width="50px" alt=""
           /></a>
     
          
           <a href="https://www.gosuslugi.ru"
-               ><img class="yt" src="images/gossusl.jpg" width="50px"
+               ><img class="yt"  data-bs-toggle="tooltip"
+               data-bs-placement="bottom"
+               title="Госуслуги норм тема" src="images/gossusl.jpg" width="50px"
               alt=""
              /></a>
        
