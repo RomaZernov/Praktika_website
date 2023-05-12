@@ -1,47 +1,36 @@
-const apiKey = 'f3a750a7ad6a3f82c8c48d04ce5069c1';
+// Устанавливаем API ключ и город для запроса погодных данных
+const apiKey = '243a8b77ccfc3b71c13c85acddb12e63';  
+const city = 'Vyborg'; 
 
+// Функция для получения данных о погоде
+function getWeatherData() {   
+    // Отправляем запрос на сервер с помощью метода fetch
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=32&appid=${apiKey}`)   
+      .then(response => response.json())   // Получаем ответ и преобразуем его в формат JSON
+      .then(data => {   
+        // Обрабатываем полученные данные и создаем новый массив объектов
+        const weatherData = data.list.filter(item => item.dt_txt.includes('00:00:00') || item.dt_txt.includes('12:00:00') || item.dt_txt.includes('18:00:00')).map(item => ({   
+          day: new Date(item.dt * 1000).toLocaleDateString(),   // Преобразуем дату в строку в формате "день.месяц.год"
+          time: new Date(item.dt * 1000).toLocaleTimeString(),   // Преобразуем время в строку в формате "часы:минуты"
+          precipitation: item.weather[0].description,   // Получаем описание погоды
+          temperature: Math.round(item.main.temp - 273.15) + '°C'   // Получаем температуру в градусах Цельсия и округляем до целых чисел
+        }));   
+           
+        // Отображаем данные в таблице
+        const tableBody = document.querySelector('tbody');   // Находим тело таблицы
+        tableBody.innerHTML = '';   // Очищаем тело таблицы
+        weatherData.forEach(item => {   // Добавляем строки в таблицу для каждого объекта в массиве
+          const row = document.createElement('tr');   // Создаем новую строку
+          row.innerHTML = `   
+            <td>${item.day}</td>   
+            <td>${item.time}</td>   
+            <td>${item.precipitation}</td>   
+            <td>${item.temperature}</td>   
+          `;   
+          tableBody.appendChild(row);   // Добавляем строку в тело таблицы
+        });   
+      })   
+      .catch(error => console.error(error));   // Обрабатываем ошибки при запросе данных
+  }   
 
-const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=London,uk&appid=${apiKey}`;
-const table = document.getElementById('weather-table');
-
-// Fetch data from API and build table
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    data.list.forEach(weatherData => {
-      const date = new Date(weatherData.dt * 1000);
-      const dateFormatted = `${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}`;
-      const temp = `${Math.round(weatherData.main.temp - 273.15)}°C`;
-      const windSpeed = `${weatherData.wind.speed} m/s`;
-      const description = weatherData.weather[0].description;
-
-      const row = document.createElement('tr');
-      const dateCell = document.createElement('td');
-      const tempCell = document.createElement('td');
-      const windSpeedCell = document.createElement('td');
-      const descriptionCell = document.createElement('td');
-
-      dateCell.textContent = dateFormatted;
-      tempCell.textContent = temp;
-      windSpeedCell.textContent = windSpeed;
-      descriptionCell.textContent = description;
-
-      dateCell.style.padding = '10px';
-      tempCell.style.padding = '10px';
-      windSpeedCell.style.padding = '10px';
-      descriptionCell.style.padding = '10px';
-
-      dateCell.style.border = '1px solid #ccc';
-      tempCell.style.border = '1px solid #ccc';
-      windSpeedCell.style.border = '1px solid #ccc';
-      descriptionCell.style.border = '1px solid #ccc';
-
-      row.appendChild(dateCell);
-      row.appendChild(tempCell);
-      row.appendChild(windSpeedCell);
-      row.appendChild(descriptionCell);
-
-      table.querySelector('tbody').appendChild(row);
-    });
-  })
-  .catch(error => console.error(error));
+getWeatherData();   // Вызываем функцию для получения и отображения погодных данных.
